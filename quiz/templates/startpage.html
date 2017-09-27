@@ -24,12 +24,12 @@
 
 				<div class="col-md-4 quiz-box">
 					
-					<p>
-
-						Quiz 1
-					</p>
+					{% for quiz in quizzes %}
+						<p>{{ quiz.name}}
 
 
+						</p>
+					{% endfor %}
 
 				</div>
 				<div class="col-md-4 quiz-box">
