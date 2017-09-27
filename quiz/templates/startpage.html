@@ -21,41 +21,16 @@
 		
 
 			<div class="row">
-
-				<div class="col-md-4 quiz-box">
 					
 					{% for quiz in quizzes %}
-						<p>{{ quiz.name}}
-
-
-						</p>
+						<div class="col-md-4 quiz-box">
+							<p>
+								<a href="{% url 'quiz_page' quiz.quiz_number %}">
+								{{ quiz.name }}
+	    						</a>
+	    					</p>
+						</div>
 					{% endfor %}
-
-				</div>
-				<div class="col-md-4 quiz-box">
-					
-					<p>
-
-						
-						Quiz 2
-
-					</p>
-
-
-				</div>
-				<div class="col-md-4 quiz-box">
-					
-					<p>
-						
-						Quiz 3
-
-					</p>
-
-
-				</div>
-
-				
-
 
 
 			</div>
