@@ -2,6 +2,9 @@
 
 from quiz.models import Quiz
 
+#import answers
+from django.shortcuts import redirect
+
 # Create your views here.
 
 # Lägger till nya vyer för quiz-sida
@@ -43,6 +46,13 @@ def completed(request, quiz_number):
 			"quiz_number": quiz_number,
 	}
 	return render(request, "completed.html", context)
+
+def answer (request,quiz_number,question_number):
+	answer = request.POST["answer"]
+	saved_answers = request.session.get(str(quiz_number), {})
+	saved_answers[question_number] = int(answer)
+	request.session[quiz_number] = saved_answers
+	return redirect("question_page", quiz_number, question_number + 1)
 
 
 
