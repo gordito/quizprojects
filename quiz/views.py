@@ -54,6 +54,7 @@ def completed(request, quiz_number):
 	context = {
 	    "correct": num_correct_answers,
 	    "total": num_questions,
+	    "percentage_correct": num_correct_answers/num_questions,
 	}
 	return render(request, "completed.html", context)
 
