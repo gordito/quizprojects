@@ -22,6 +22,9 @@
 						
 						<h1>{{ quiz.name }}</h1>
 						<p> 
+							{{ quiz.description }}
+						</p>
+						<p>
 							<a href="{% url 'question_page' quiz_number 1 %}"> Starta
 							</a>
 						</p>
