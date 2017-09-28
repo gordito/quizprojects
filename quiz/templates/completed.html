@@ -23,7 +23,13 @@
 
 					<div class="col-md-4">
 						
-						<h1>YEY! Du är klar och fick {{ correct }} av {{ total }}</h1>
+						{% if correct >= 2 %} 
+							<h1>YEY! Du är klar och fick {{ correct }} av {{ total }}</h1>
+						{% elif correct == 1 %}
+							<h1>Helt okej! Du är klar och fick {{ correct }} av {{ total }}</h1>
+						{% elif correct == 0 %}
+							<h1>Oj... du är rätt kass på hästar! Du är klar och fick {{ correct }} av {{ total }}</h1>
+						{% endif %}
 
 					</div>
 
