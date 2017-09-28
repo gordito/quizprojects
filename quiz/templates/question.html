@@ -27,23 +27,22 @@
 					<div class="col-md-6">
 						
 						<h1>{{ question_number }}. {{ question}}</h1>
-					<form>
+					<form action="{% url "answer_page" quiz.quiz_number quiestion_number %}" method="post">
+						{% csrf_token %}
 						<div class="radio">
 
-							<label><input type="radio" name="optradio"> {{ answer1 }} </label>
-
+							<label><input type="radio" name="answer" value="1"> {{ answer1 }} </label>
 
 						</div>
 
 						<div class="radio">
 
-							<label><input type="radio" name="optradio"> {{ answer2 }} </label>
+							<label><input type="radio" name="answer" value="2"> {{ answer2 }} </label>
 
 						</div>
 						<div class="radio">
 
-							<label><input type="radio" name="optradio"> {{ answer3 }} </label>
-
+							<label><input type="radio" name="answer" value="3"> {{ answer3 }} </label>
 
 						</div>
 					</form>
