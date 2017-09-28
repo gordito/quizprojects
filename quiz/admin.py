@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+#quiz-modellerna för databasen
+
+from quiz.models import Quiz, Question
+
+admin.site.register(Quiz)
+admin.site.register(Question)
