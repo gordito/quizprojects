@@ -1,3 +1,8 @@
+#djangoadmin for database 
+
+from django.contrib import admin
+
+
 #Rätt URL:s med rätt vyer. Alltså visa rätt sida när URL har ett visst värde.
 
 from django.urls import path
@@ -8,5 +13,6 @@ urlpatterns = [
 	path("quiz/<int:quiz_number>/",views.quiz, name="quiz_page"),
 	path("quiz/<int:quiz_number>/question/<int:question_number>/", views.question, name="question_page"),
 	path("quiz/<int:quiz_number>/completed/", views.completed, name="completed_page"),
+	path("admin/", admin.site.urls),
 ]
 
