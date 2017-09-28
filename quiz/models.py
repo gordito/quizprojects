@@ -15,3 +15,7 @@ class Question(models.Model):
 	correct = models.PositiveIntegerField()
 	quiz = models.ForeignKey(Quiz, related_name="questions", on_delete=models.CASCADE)
 
+
+
+
+
