@@ -27,8 +27,7 @@
 		<div class="container-fluid">
 			<div class="row">
 
-				<div class="col-md-4 quiz-box">
-
+				<div class="col-md-4 quiz-icon">
 
 
 					<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
@@ -37,7 +36,7 @@
 
 				</div>
 
-				<div class="col-md-4 quiz-box">
+				<div class="col-md-4 quiz-icon">
 
 					<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
 
@@ -45,7 +44,7 @@
 
 				</div>
 
-				<div class="col-md-4 quiz-box">
+				<div class="col-md-4 quiz-icon ">
 
 					<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
 
@@ -72,11 +71,12 @@
 					{% for quiz in quizzes %}
 						<div class="col-md-4 quiz-box">
 							
-							<p>
-								<a href="{% url 'quiz_page' quiz.quiz_number %}">
+							<h2>
+								<button type="button" class="btn btn-success">
+								<a role="button" class="h2" href="{% url 'quiz_page' quiz.quiz_number %}">
 								{{ quiz.name }}
-	    						</a>
-	    					</p>
+	    						</a></button>
+	    					</h2>
 	    					<p> 
 								{{ quiz.description }}
 							</p>

@@ -14,6 +14,9 @@ h1 {
     text-align: center;
     color: #fff;
 }
+h2 {
+	color: #fff;
+}
 
 .glyphicon {
 	font-size: 200px;
@@ -22,8 +25,16 @@ h1 {
 
 .quiz-box
 {
+	border-color: #fff;
 	text-align: center;
 	background: #8FC1E3; 
+	margin: 5px;
+}
+.quiz-icon {
+	text-align: center;
+}
+.btn-color {
+	color: #fff;
 }
 
 
