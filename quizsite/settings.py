@@ -124,3 +124,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
     )
+
+# Skicka med static-filer som t.ex. css
+
+STATIC_ROOT = 'staticfiles'
