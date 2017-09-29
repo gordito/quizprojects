@@ -2,9 +2,19 @@
 body {
 
 	background: #31708E;
-	font-family: times new roman;
+	font-family: 'Open Sans', sans-serif;
+    color: #ff4242;
 
 }
+h1-start
+{
+    
+    font-family: 'Abril Fatface';
+    font-size: 80px;
+    margin-top: 5%;
+    text-align: center;
+}
+
 .quiz-box
 {
 	text-align: center;
