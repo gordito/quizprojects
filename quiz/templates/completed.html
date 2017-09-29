@@ -7,21 +7,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/static/css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway" rel="stylesheet">
 		<title>Results</title>
 
 	</head>
 
 	<body>
 
-		<div class="container jumbotron">
-
-			<div class="container-fluid">
-
-		
+		<div class="container">
 
 				<div class="row">
 
-					<div class="col-md-4">
+					<div class="col-md-2 text-center "></div>
+
+					<div class="col-md-8 quiz-boxes text-center">
 						
 						{% if correct >= 0.8 %} 
 							<h1>YEY! Du är klar och fick {{ correct }} av {{ total }}</h1>
@@ -31,14 +31,16 @@
 							<h1>Oj... du är rätt kass på hästar! Du är klar och fick {{ correct }} av {{ total }}</h1>
 						{% endif %}
 
-					</div>
+					<div class="col-md-4 text-center quiz-boxes">
 
-					<div class="col-md-4">
+						<p>
 
-						<p><a href="{% url 'start_page' %}">
+							<a role="button" class="h2" href="{% url 'start_page' %}">
 							Till startsidan
 							</a>
 						</p>
+
+					</div>
 					</div>
 				</div>
 			
