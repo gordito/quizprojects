@@ -2,17 +2,17 @@
 body {
 
 	background: #31708E;
-	font-family: 'Open Sans', sans-serif;
-    color: #ff4242;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
 
 }
-h1-start
-{
-    
-    font-family: 'Abril Fatface';
-    font-size: 80px;
+h1 {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 100px;
     margin-top: 5%;
     text-align: center;
+    color: #fff;
 }
 
 .quiz-box
@@ -22,8 +22,7 @@ h1-start
 }
 
 
-.hero {
-
+/*.hero {
 	background: #8FC1E3;
 }
 .button-color
