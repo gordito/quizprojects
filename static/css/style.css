@@ -15,6 +15,11 @@ h1 {
     color: #fff;
 }
 
+.glyphicon {
+	font-size: 200px;
+	margin: 40px;
+}
+
 .quiz-box
 {
 	text-align: center;
