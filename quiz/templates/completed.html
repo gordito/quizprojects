@@ -24,21 +24,41 @@
 					<div class="col-md-8 quiz-boxes text-center">
 						
 						{% if correct >= 0.8 %} 
-							<h1>YEY! Du är klar och fick {{ correct }} av {{ total }}</h1>
+							<br>
+							<h1>YEY!</h1> 
+							<br>
+							<p>Du är klar och fick {{ correct }} av {{ total }}
+								<br>
+								<br>
+								<img src="/static/img/Friends_logo.png" alt="Friends_logo" height="" width="100">
+							</p>
+
 						{% elif correct < 0.8 %}
-							<h1>Helt okej! Du är klar och fick {{ correct }} av {{ total }}</h1>
+								<h1>Helt okej!</h1> 
+								<p>Du är klar och fick {{ correct }} av {{ total }}
+									<br>
+									<br>
+								<img src="/static/img/Friends_logo.png" alt="Friends_logo" height="" width="100">
+							</p>
+							
 						{% elif correct < 0.2 %}
-							<h1>Oj... du är rätt kass på hästar! Du är klar och fick {{ correct }} av {{ total }}</h1>
+							<h1>Oj...</h1> <p>Du är rätt kass på hästar! Du är klar och fick {{ correct }} av {{ total }}
+								<br>
+								<br>
+							<img src="/static/img/Friends_logo.png" alt="Friends_logo" height="" width="100"></p>
 						{% endif %}
+					<div class="col-md-4"></div>
 
 					<div class="col-md-4 text-center quiz-boxes">
 
 						<p>
-
-							<a role="button" class="h2" href="{% url 'start_page' %}">
+							<a role="button" class="h2 btn btn-info " href="{% url 'start_page' %}">
 							Till startsidan
 							</a>
+
 						</p>
+
+						<br>
 
 					</div>
 					</div>
