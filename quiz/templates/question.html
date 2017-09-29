@@ -13,39 +13,40 @@
 
 	<body>
 
-		<div class="container jumbotron">
-
-			<div class="container-fluid">
-
-		
+		<div class="container">
 
 				<div class="row">
-					<div class="col-md-12">
-						<div class="col-md-2">
-						</div>
 
-					<div class="col-md-6">
+					<div class="col-md-2 text-center"></div>
+
+					<div class="col-md-8 quiz-boxes text-center">
 						
-						<h1>{{ question_number }}. {{ question}}</h1>
+						<h1 class="h1-question">{{ question_number }}. {{ question}}</h1>
 						<form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
 							{% csrf_token %}
+							<br>
+
+
 							<div class="radio">
 
 								<label><input type="radio" name="answer" value="1" checked> {{ answer1 }} </label>
 
 							</div>
 
+							<br>
+
 							<div class="radio">
 
 								<label><input type="radio" name="answer" value="2"> {{ answer2 }} </label>
 
 							</div>
+							<br>
 							<div class="radio">
 
 								<label><input type="radio" name="answer" value="3"> {{ answer3 }} </label>
 
 							</div>
-							<div class="col-md-12">
+							<div class="col-md-12 quiz-boxes">
 								  <button type="submit" class="btn btn-info btn-lg" role="button">Nästa</button>
 							</div>
 						</form>
