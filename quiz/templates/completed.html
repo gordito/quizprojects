@@ -30,7 +30,7 @@
 							<p>Du är klar och fick {{ correct }} av {{ total }}
 								<br>
 								<br>
-								<img src="/static/img/Friends_logo.png" alt="Friends_logo" height="" width="100">
+								<img src="/static/img/omg.gif" alt="omg" height="" width="200">
 							</p>
 
 						{% elif correct < 0.8 %}
@@ -38,21 +38,21 @@
 								<p>Du är klar och fick {{ correct }} av {{ total }}
 									<br>
 									<br>
-								<img src="/static/img/Friends_logo.png" alt="Friends_logo" height="" width="100">
+								<img src="/static/img/happy1.gif" alt="happy" height="" width="200">
 							</p>
 							
 						{% elif correct < 0.2 %}
 							<h1>Oj...</h1> <p>Du är rätt kass på hästar! Du är klar och fick {{ correct }} av {{ total }}
 								<br>
 								<br>
-							<img src="/static/img/Friends_logo.png" alt="Friends_logo" height="" width="100"></p>
+							<img src="/static/img/bad.gif" alt="bad" height="" width="200"></p>
 						{% endif %}
 					<div class="col-md-4"></div>
 
 					<div class="col-md-4 text-center quiz-boxes">
 
 						<p>
-							<a role="button" class="h2 btn btn-info " href="{% url 'start_page' %}">
+							<a role="button" class="h2 btn btn-info btn-lg" href="{% url 'start_page' %}">
 							Till startsidan
 							</a>
 

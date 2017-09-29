@@ -26,6 +26,8 @@ h1 {
 h2 {
 	color: #fff;
 	text-align: center;
+	font-size: 50px;
+	font-family: 'Abril Fatface', cursive;
 }
 
 .glyphicon {

@@ -19,7 +19,7 @@
 			
 			<h1>Mitt Quiz</h1>
 
-			<p class="preamble"> Hej hej
+			<p class="preamble"> Hej och välkommen till min sjukt fantastiska Quiz-site!
 
 			</p>
 
@@ -72,10 +72,9 @@
 						<div class="col-md-4 quiz-box">
 							
 							<h2>
-								<button type="button" class="btn btn-success">
-								<a role="button" class="h2" href="{% url 'quiz_page' quiz.quiz_number %}">
+								<a href="{% url 'quiz_page' quiz.quiz_number %}">
 								{{ quiz.name }}
-	    						</a></button>
+	    						</a>
 	    					</h2>
 	    					<p> 
 								{{ quiz.description }}
