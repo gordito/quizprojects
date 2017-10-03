@@ -24,52 +24,29 @@
 			</p>
 
 		</div>
-		<div class="container-fluid">
-			<div class="row">
-
-				<div class="col-md-4 quiz-icon">
-
-
-					<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-
-
-
-				</div>
-
-				<div class="col-md-4 quiz-icon">
-
-					<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-
-
-
-				</div>
-
-				<div class="col-md-4 quiz-icon ">
-
-					<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-
-
-
-				</div>
-
-			</div>
-
-
-
-		</div>
+		
 
 
 
 			
 
-			<div class="container-fluid">
-
-		
+		<div class="container-fluid">
 
 			<div class="row">
 					
 					{% for quiz in quizzes %}
 						<div class="col-md-4 quiz-box">
+							
+							{{ quiz.quiz_number }}
+							
+							{% if quiz.quiz_number == 1 %}
+							<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+							{% elif quiz.quiz_number == 2 %}
+							<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+							{% else %}
+							<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+							{% endif %}
+							
 							
 							<h2>
 								<a href="{% url 'quiz_page' quiz.quiz_number %}">
@@ -86,8 +63,6 @@
 
 			</div>
 			
-
-
 		</div>
 
 
